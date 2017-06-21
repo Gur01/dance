@@ -1,0 +1,11 @@
+.modal-box#modalBox
+  .modal-close#modalClose
+  h3(class='section-header') Как мы можем вам помочь?
+  h4 Задайте нам любой интересующий Вас вопрос о театре
+  .container
+    form(method='POST', action='', id='mainForm')
+      input(name='name', type='text', placeholder='Ваше имя*', required)
+      input(name='mail', type='text', placeholder='e-mail*', required)
+      input(name='phone', type='text', placeholder='Номер телефона')
+      textarea(name='message', placeholder='Что вы хотите узнать?')
+      input(type="submit", value='Отправить сообщение', class='form-btn')

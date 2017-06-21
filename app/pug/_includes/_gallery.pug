@@ -1,0 +1,50 @@
+section(class='gallery-section', id='galleryId')
+  h3(class='section-header') Фотогалерея
+  .container
+    .light-box#lightbox
+      .exit#exit
+      .navigation
+        .prev(data-dir='prev')
+        .next(data-dir='next')
+    .gallery
+      .gallery-left
+        .top
+          .img-wrap
+            img(src="./img/gallery/thumbs/1.jpg", alt="dd")
+        .bottom
+          .inner-left
+            .img-wrap
+              img(src="./img/gallery/thumbs/5.jpg", alt="dd")
+          .inner-right
+            .img-wrap
+              img(src="./img/gallery/thumbs/6.jpg", alt="dd")
+            .img-wrap
+              img(src="./img/gallery/thumbs/7.jpg", alt="dd")
+                
+      .gallery-right
+        .bottom
+          .inner-left
+            .img-wrap
+              img(src="./img/gallery/thumbs/2.jpg", alt="dd")
+          .inner-right
+            .img-wrap
+              img(src="./img/gallery/thumbs/3.jpg", alt="dd")
+            .img-wrap
+              img(src="./img/gallery/thumbs/4.jpg", alt="dd")
+        .top
+          .img-wrap
+            img(src="./img/gallery/thumbs/8.jpg", alt="dd")
+
+  .btn
+    a(href="#") Больше фотографий
+  .video-wrapper
+
+    video(width='100%', id='video', poster="./video/snapshot.jpg", muted, playsinline)
+      source(src='./video/video.mp4', type='video/mp4')
+      source(src='./video/video.webm', type="video/webm")
+      source(src='./video/video.ogv', type="video/ogg")
+    span.icon-play-button
+    .btn
+      a(href="#") Больше видеозаписей
+
+

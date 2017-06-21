@@ -1,0 +1,93 @@
+/*
+ * about section
+ */
+.about-me
+  height: 100%
+  position: relative
+  @media(max-width: 450px)
+    padding-top: 6em
+  h3
+    position: relative
+    z-index: 2
+.about,
+.about-me
+  .about-wrapper,
+  .about_me-wrapper
+    text-align: center
+    p
+      font-size: rem(14px)
+      column-count: 2
+      column-width: 380px
+      column-gap: 20px
+      font-size: rem(14px)
+      margin-top: em(108px)
+      line-height: 1.7
+      display: inline-block
+      text-align: left
+      @media(max-width: 1000px)
+        width: 50%
+        text-align: center
+      @media(max-width: 768px)
+        width: 60%        
+      @media(max-width: 668px)
+        width: 70%        
+      @media(max-width: 568px)
+        width: 80%        
+      @media(max-width: 450px)
+        width: 100%
+        margin-top: em(27px)
+
+.about-me
+  height: 100% 
+  width: 100%
+  background: url("../img/about_me.jpg") center center no-repeat
+  background-size: cover
+  background-attachment: fixed  
+  @media(max-width: 768px)
+    background-image: url("../img/about_me768.jpg")
+    padding-bottom: 0 !important  
+    height: auto 
+    background-position: 50% -100px
+    .container
+      padding-left: 0 !important
+      padding-right: 0 !important
+    .about_me-wrapper
+      display: block !important
+      height: auto
+      margin-top: 60% !important
+      background-color: white
+        
+      .inner-wr
+        display: block
+        p
+          margin-bottom: 0 !important
+          color: black       
+      
+    p
+      margin-bottom: 40px
+
+  .container
+    height: 100%
+    .about-wrapper
+      color: white
+      height: 100%
+      display: table
+      margin: 0 auto
+      @media(max-width: 768px)
+        display: block
+    .about_me-wrapper
+      color: white
+      height: 100%
+      display: table
+      margin: 0 auto        
+      .inner-wr
+        display: table-cell
+        vertical-align: bottom          
+        @media(max-width: 768px)
+          padding-bottom: 30px
+        p
+          @media(min-width: 450px)
+            padding-top: 0
+            margin-top: 3.5em !important
+            margin-bottom: 3.5em !important
+

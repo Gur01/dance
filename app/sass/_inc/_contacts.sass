@@ -1,0 +1,40 @@
+.contacts
+  .info
+    text-align: center
+    font-size: rem(14px)
+    margin-top: em(79px, 14px)
+    display: table
+    width: 100%
+    @media(max-width: 550px)
+      display: block
+    @media(max-width: 450px)
+      margin-top: em(40px, 14px)
+      
+    .info-block
+      display: table-cell
+      text-align: center
+      vertical-align: middle
+      width: (100/3) * 1%
+      line-height: 1.5
+      
+      @media(max-width: 550px)
+        display: block
+        width: 100%
+        margin-bottom: 50px
+        &:last-child
+          margin-bottom: 0
+      @media(max-width: 450px)
+        margin-top: em(40px, 14px)
+
+      span
+        font-size: 65px
+        color: #b4aca6
+      p
+        margin-top: 45px
+    .adress
+      @media(min-width: 551px)
+        .icon-placeholder:before
+          position: relative
+          top: 15px     
+    
+

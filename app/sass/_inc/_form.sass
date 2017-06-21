@@ -1,0 +1,153 @@
+//modal
+.gallery-active
+  .modal-overlay
+    display: block
+    z-index: 0
+    position: fixed
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    background-color: transparent
+    z-index: 900
+
+.modal-box-active
+  overflow: hidden !important
+  //.modal-box
+    //display: block
+.modal-box
+  position: fixed
+  width: 100%
+  height: 100%
+  background-color: #f1eee7
+  z-index: 1000
+  display: block
+  left: 0
+  top: 0
+  padding-top: em(90px) !important
+  padding-bottom: 0 !important
+  font-weight: 200
+  font-size: rem(16px)
+  font-family: $font
+  display: none
+  @media(max-height: 768px)
+    //min-height: 100%
+    overflow-y: scroll
+    h4
+      margin-top: em(40px) !important
+      margin-bottom: em(25px) !important
+      .modal-close
+        top: 15px
+        right: 15px
+  h3
+    @media(max-width: 550px)
+      &:before,
+      &:after
+        display: none !important
+  
+  h4
+    font-weight: 200
+    font-size: rem(16px)
+    font-family: $font
+    text-align: center
+    margin-top: em(120px)
+    margin-bottom: em(55px)
+    @media(max-width: 550px)
+      margin-top: em(40px)
+      margin-bottom: em(25px)
+
+  .modal-close
+    position: absolute
+    width: 40px
+    height: 40px
+    top: 30px
+    right: 30px
+    cursor: pointer
+    &:before,
+    &:after
+      background: #fff
+      content: ''
+      display: block
+      height: 36px
+      position: absolute  
+      transform-origin: 0 0
+      width: 5px 
+    &:before
+      transform: translate(7px,9px) rotate(-45deg)
+    &:after
+      transform: translate(32px,5px) rotate(45deg)
+      &:first-child
+        transform: translateY(5px) rotate(45deg)
+      &:last-child
+        transform: translateY(-5px) rotate(-45deg)
+  
+  .container
+    text-align: center
+    
+  form
+    width: 100%
+
+    input,
+    textarea
+      font-family: $font
+      width: 100%
+      line-height: 3.4
+      margin-bottom: 15px
+      border: none
+      padding-left: 20px
+      padding-right: 20px
+      color: #87807c
+      font-size: rem(16px)
+      font-weight: 200
+      letter-spacing: 1px
+      +placeholder
+        color: #a8a19b
+        font-size: rem(16px)
+        font-weight: 200
+    input[name='mail']
+      width: 49%
+      display: inline-block
+      float: left
+      margin-right: 1%
+    input[name='phone']
+      margin-left: 1%
+      width: 49%
+      display: inline-block
+    textarea
+      min-height: em(200px)
+      @media(max-width: 550px)
+        min-height: em(100px)
+
+
+    .form-btn
+      letter-spacing: 2px
+      font-family: HelveticaNeueCyr
+      font-weight: normal
+      padding: 10px 0
+      background-color: transparent
+      border: 3px solid #b4ada6
+      color: #b4ada6
+      text-transform: uppercase
+      cursor: pointer
+      font-size: rem(14px)
+      transition: all .3s ease
+      &:hover
+        background-color: #b4ada6
+        color: #fff
+
+.required
+  border: 1px solid #fcaab2 !important
+
+.modal-active
+  overflow: hidden
+  .modal-box
+    display: inline-block
+    
+  .modal-overlay
+    display: block
+.gallery-active
+  overflow: hidden
+
+

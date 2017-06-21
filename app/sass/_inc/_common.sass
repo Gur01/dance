@@ -1,0 +1,108 @@
+//common styles
+html
+	box-sizing: border-box
+	font-size: 100%
+
+*, *::before, *::after
+  box-sizing: inherit
+
+body
+  letter-spacing: 1px
+  color: #000
+  font-family: HelveticaNeueCyr
+  font-weight: 200
+  color: #87807c
+  -webkit-font-smoothing: antialiased
+	
+ul
+	list-style-type: none
+	margin: 0
+	padding: 0
+video
+  vertical-align: middle
+@media(max-width: 768px)
+  section,
+  .first-screen,
+  footer
+    background-attachment: scroll !important
+section,
+.modal-box
+  padding-top: em(112px)
+  padding-bottom: em(112px)
+  position: relative
+  @media(max-width: 450px)
+    padding-top: em(40px)
+    padding-bottom: em(40px)
+
+  h3
+    font-size: rem(18px)
+    color: #fcaab2
+    text-transform: uppercase
+    font-family: HelveticaNeueCyr
+    font-weight: bold
+    letter-spacing: 3.6px
+    overflow: hidden
+    text-align: center
+    @media(max-width: 450px)
+      font-size: rem(16px)
+    &:after,
+    &:before
+      content: ''
+      height: 2px
+      background-color: #fcaab2
+      display: inline-block
+      vertical-align: middle
+      width: 100%
+      position: relative
+    &::before
+      margin-left: -100%
+      left: -80px
+      @media(max-width: 450px)
+        left: -30px
+
+    &::after
+      margin-right: -100%
+      left: 80px
+      @media(max-width: 450px)
+        left: 30px
+
+//button-styles    
+.btn
+  text-align: center
+  margin-top: 60px
+  padding-bottom: 13px
+  white-space: nowrap
+  @media(max-width: 450px)
+    margin-top: 40px
+
+  a
+    letter-spacing: 2px
+    cursor: pointer
+    font-family: HelveticaNeueCyr
+    font-weight: normal
+    text-transform: uppercase
+    padding: 12px 32px
+    background-color: white
+    border: 3px solid #b4ada6
+    color: #b4ada6
+    font-size: rem(14px)
+    text-decoration: none
+    transition: all .3s
+    @media(max-width:350px)
+      padding-left: 25px
+      padding-right: 25px
+    &:hover
+      background-color: #b4ada6
+      color: white
+
+//styles for container
+.container
+  margin: 0 auto
+  padding: 0 15px
+  max-width: 1170px
+  +clearfix
+
+//common block animation
+.fade
+  opacity: 0
+.animated

@@ -1,0 +1,6 @@
+//em and rem from px
+@function em($pxval, $base: $base-fz)
+  @return ($pxval / $base) * 1em
+
+@function rem($pxval, $base: $base-fz)
+  @return ($pxval / $base) * 1rem

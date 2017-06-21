@@ -1,0 +1,131 @@
+.groups
+  background-color: #f1eee7
+  padding-bottom: 0
+  .container
+    @media(max-width: 550px)
+      padding-left: 0
+      padding-right: 0
+  .group-wrapper
+    position: relative
+    margin-top: 100px
+    margin-bottom: 100px
+    width: 100%
+    overflow: hidden
+    +clearfix
+    &:first-child
+     @media(max-width: 450px)
+      margin-top: 31px
+    @media(max-width: 960px)
+      margin-top: 70px
+      margin-bottom: 70px
+    @media(max-width: 450px)
+      margin-top: 0
+      margin-bottom: 0
+      margin-top: -23px
+
+    &:nth-child(even)
+      .group-img
+        float: right
+        margin-right: 70px
+        @media(max-width: 960px)
+          float: none
+          margin-right: auto
+          margin-left: auto
+      .group-desc
+        left: 10px
+        @media(max-width: 960px)
+          float: none
+          margin-right: auto
+          margin-left: auto
+          left: 7%
+        @media(max-width: 768px)
+          left: 5%
+        @media(max-width: 550px)
+          width: 100%
+          left: 15px
+    &:last-child
+      margin-bottom: 0
+    .group-img
+      position: relative
+      z-index: 2
+      width: 48%
+      margin-left: 70px
+      
+      @media(max-width: 960px)
+        float: none
+        margin: 0 auto
+        width: 60%
+        @media(max-width: 768px)
+          width: 80%
+        @media(max-width: 550px)
+          width: 100%
+
+      img
+        width: 100%
+    .group-desc
+      position: absolute
+      padding: 56px 50px
+      background-color: white
+      top: 0
+      right: -9px
+      width: 46%
+      top: -23px
+      right: 15px
+      z-index: 1
+      letter-spacing: 1px
+      font-size: rem(14px)
+      @media(max-width: 960px)
+        width: 58%
+        z-index: 3
+        left: 7%
+        position: relative
+        margin: 0 auto
+      @media(max-width: 768px)
+        width: 80%
+        z-index: 3
+        left: 5%
+        position: relative
+        margin: 0 auto
+      @media(max-width: 550px)
+        width: 100%
+        left: 15px
+
+        
+      h4
+        text-align: center
+        margin-bottom: 29px
+        margin-top: 3px
+        font-family: HelveticaNeueCyr
+        font-weight: 200
+        font-size: rem(18px)
+      p
+        line-height: 1.6
+        position: relative
+        &:after
+          position: absolute
+          height: 1px
+          width: 72%
+          background-color: #87807c
+          content: ''
+          display: inline-block
+          bottom: -16px
+          left: 50%
+          transform: translateX(-50%)
+  .btn
+    padding-bottom: 52px
+    margin-top: 74px
+    @media(max-width: 450px)
+      margin-top: 21px
+    a
+      background-color: #f1eee7
+      &:hover
+        background-color: #b4ada6
+  .hero-img
+    margin-top: 75px
+    height: 409px
+    width: 100%
+    background: url('../img/hero-img.jpg') center center no-repeat
+    background-attachment: fixed
+    background-size: cover
+    @media(max-width: 450px)
+      display: none

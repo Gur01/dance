@@ -1,0 +1,91 @@
+.reviews
+  background-color: #f1eee7
+  padding-bottom: 34px
+
+  .container
+    @media(max-width: 767px)
+      padding-left: 0
+      padding-right: 0
+  .owl-rev
+    .rev
+      margin-top: 90px
+      padding-bottom: 50px
+      @media(max-width: 450px)
+        margin-top: 35px
+        padding-bottom: 0 !important
+
+      .rev-inner
+        position: relative
+        width: 75%
+        left: 46%
+        transform: translateX(-50%)
+        @media(max-width: 767px)
+          width: 100%
+          left: 0
+          transform: none
+
+        .rev-img
+          width: 46%
+          height: auto
+          position: absolute
+          @media(max-width: 767px)
+            width: 100%
+            position: relative
+            z-index: 1
+            
+          img
+            width: 100%
+            height: auto
+
+          
+        .rev-text
+          left: 39%
+          position: relative
+          background-color: white
+          top: 33px
+          width: 72%
+          padding: 40px 30px 50px
+          font-family: HelveticaNeueCyr
+          display: inline-block
+          @media(max-width: 767px)
+            top: -23px
+            left: 15px
+            width: calc(100% - 15px)
+            z-index: 2
+                               
+          div
+            font-size: rem(18px)
+            font-weight: 200
+            text-align: center
+            margin-top: rem(8px)
+          p
+            font-size: rem(14px)
+            margin-top: rem(28px)
+            line-height: 1.5
+            position: relative
+            &:after
+              position: absolute
+              height: 1px
+              width: 47%
+              background-color: #87807c
+              content: ''
+              display: inline-block
+              bottom: -10px
+              left: 50%
+              transform: translateX(-50%)
+.owl-carousel
+  position: relative
+
+.owl-nav
+  .owl-prev
+    position: absolute
+    left: 18px
+    top: 38%
+
+  .owl-next
+    position: absolute
+    right: 18px
+    top: 38%
+@media(max-width: 767px)
+  .owl-nav
+    display: none

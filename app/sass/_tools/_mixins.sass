@@ -1,0 +1,18 @@
+=clearfix
+ 	&::after,
+  &::before
+    display: table
+    content: ''
+    clear: both
+
+//full background with optional height=100%
+=fixed-bg($url, $full:false, $dev:false)
+  background: url($url) center center no-repeat
+  background-size: cover
+  @if $dev!=dev
+    background-attachment: fixed
+  @if $full==true
+    height: 100%
+
+=col($num)
+  width: (100/$num) * 1%
